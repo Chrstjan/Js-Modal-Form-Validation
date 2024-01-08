@@ -9,6 +9,10 @@ body {
     font-family: sans-serif;
 }
 
+body.dom-noscroll {
+    overflow: hidden;
+}
+
 .main-container {
     max-width: 1400px;
     margin: 0 auto;
