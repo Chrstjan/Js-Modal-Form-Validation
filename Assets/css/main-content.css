@@ -17,6 +17,7 @@
   width: 100%;
   height: 100%;
   animation: cookieAnimation 1s 1 forwards;
+  z-index: 999;
 }
 
 .cookie-popup {
@@ -64,4 +65,31 @@
 
 .dinny-gallery .gallery-figure img {
   width: 100%;
+}
+
+.dinny-gallery .gallery-figure {
+  position: relative;
+}
+
+.gallery-figure .arrows-container {
+  z-index: 997;
+}
+
+.arrows-container img {
+  width: 20vw !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+
+.arrows-container .forwards-btn {
+  left: 80%;
+  transform: rotate(-90deg);
+}
+
+.arrows-container .backwards-btn {
+  left: -5%;
+  transform: rotate(90deg);
 }
